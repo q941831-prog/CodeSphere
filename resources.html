@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources – CodeSphere</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    .resource-icon img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      display: block;
+    }
+    .resource-icon {
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo-img-link">
+        <img src="images/CodeSphere.png" alt="CodeSphere Logo" class="site-logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="languages.html">Languages</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="languages.html">Languages</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="resources.html" class="active">Resources</a>
+      <a href="about.html">About</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>Learning <span style="color:#00e5a0">Resources</span></h1>
+    <p>The best free tools, platforms, and communities to help you learn programming faster.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">📚 Learning Platforms</h2>
+      <p class="section-sub">Free and paid platforms to learn programming interactively.</p>
+      <div class="resources-grid">
+
+        <div class="resource-card">
+          <div class="resource-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png" alt="freeCodeCamp logo" />
+          </div>
+          <h3>freeCodeCamp</h3>
+          <p>Completely free, self-paced platform with certifications in web dev, data analysis, machine learning and more.</p>
+          <a href="https://www.freecodecamp.org" target="_blank" rel="noopener" class="resource-link">Visit freeCodeCamp ↗</a>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python logo" />
+          </div>
+          <h3>Python.org</h3>
+          <p>Official Python docs and getting started guides straight from the language creators.</p>
+          <a href="https://www.python.org/about/gettingstarted/" target="_blank" rel="noopener" class="resource-link">Visit Python.org ↗</a>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/W3Schools_logo.svg" alt="W3Schools logo" />
+          </div>
+          <h3>W3Schools</h3>
+          <p>Quick, simple explanations of HTML, CSS, JavaScript, SQL and Python, with live code editors.</p>
+          <a href="https://www.w3schools.com" target="_blank" rel="noopener" class="resource-link">Visit W3Schools ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <h2 class="section-title">🛠️ Developer Tools</h2>
+      <p class="section-sub">Essential tools every programmer should have in their workflow.</p>
+      <div class="resources-grid">
+
+        <div class="resource-card">
+          <div class="resource-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code logo" />
+          </div>
+          <h3>VS Code</h3>
+          <p>Microsoft's free, open-source code editor. Thousands of extensions for every language. Most popular editor worldwide.</p>
+          <a href="https://code.visualstudio.com" target="_blank" rel="noopener" class="resource-link">Download VS Code ↗</a>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub logo" />
+          </div>
+          <h3>GitHub</h3>
+          <p>World's leading code hosting platform. Store code, collaborate, track changes with Git, build a portfolio.</p>
+          <a href="https://github.com" target="_blank" rel="noopener" class="resource-link">Visit GitHub ↗</a>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg" alt="Stack Overflow logo" />
+          </div>
+          <h3>Stack Overflow</h3>
+          <p>The go-to Q&amp;A community for programmers. Chances are your question has already been answered here.</p>
+          <a href="https://stackoverflow.com" target="_blank" rel="noopener" class="resource-link">Visit Stack Overflow ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-img-link">
+          <img src="images/CodeSphere.png" alt="CodeSphere Logo" class="site-logo footer-logo" />
+        </a>
+        <p>A free programming education resource for beginners and enthusiasts.</p>
+        <a href="mailto:00022963@wiut.uz" class="mailto-link">📧 00022963@wiut.uz</a>
+      </div>
+      <nav class="sitemap">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="languages.html">Languages</a></li>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li><a href="resources.html" class="active">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="footer-ext">
+        <h4>External Links</h4>
+        <ul>
+          <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs ↗</a></li>
+          <li><a href="https://www.freecodecamp.org" target="_blank" rel="noopener">freeCodeCamp ↗</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools ↗</a></li>
+          <li><a href="https://stackoverflow.com" target="_blank" rel="noopener">Stack Overflow ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CodeSphere. Created for educational purposes.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

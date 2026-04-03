@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – CodeSphere</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo-img-link">
+        <img src="images/CodeSphere.png" alt="CodeSphere Logo" class="site-logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="languages.html">Languages</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="languages.html">Languages</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html" class="active">About</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>About <span style="color:#00e5a0">CodeSphere</span></h1>
+    <p>The purpose of this site, who made it, and how it's structured.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+
+        <div>
+          <div class="about-card about-mission">
+            <h2>🎯 Website Purpose</h2>
+            <p>CodeSphere is a programming education website built to help complete beginners take their first steps into software development. It covers the most popular languages, provides structured tutorials, and curates the best free resources on the internet.</p>
+            <p>The goal is to lower the barrier to entry by presenting complex concepts in a clean, approachable format — so anyone with curiosity and an internet connection can start learning today.</p>
+          </div>
+
+          <div class="about-card" style="margin-top:20px;">
+            <h2>👤 About the Author</h2>
+            <p>This website was created as an individual coursework submission for the <strong style="color:#e8eaf0">Essential Web</strong> module (3COSC002C) at Westminster International University in Tashkent.</p>
+            <div class="student-info">
+              <p><strong>Student ID:</strong> 00022963</p>
+              <p><strong>Module:</strong> Essential Web (3COSC002C)</p>
+              <p><strong>Submission:</strong> CW1 — 60% weighting</p>
+              <p><strong>Contact:</strong> <a href="mailto:00022963@wiut.uz" style="color:#00e5a0">00022963@wiut.uz</a></p>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="disclaimer-box" style="margin-top:40px;">
+        <span class="disclaimer-icon">🎓</span>
+        <div>
+          <strong>University Project Notice</strong>
+          <p>This website is part of a university coursework project (Essential Web – 3COSC002C) submitted at Westminster International University in Tashkent. It is not intended to represent a real commercial entity. All content is for academic and educational demonstration purposes only. All re-used content has been referenced using Harvard referencing style.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-img-link">
+          <img src="images/CodeSphere.png" alt="CodeSphere Logo" class="site-logo footer-logo" />
+        </a>
+        <p>A free programming education resource for beginners and enthusiasts.</p>
+        <a href="mailto:00022963@wiut.uz" class="mailto-link">📧 00022963@wiut.uz</a>
+      </div>
+      <nav class="sitemap">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="languages.html">Languages</a></li>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+      </nav>
+      <div class="footer-ext">
+        <h4>External Links</h4>
+        <ul>
+          <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs ↗</a></li>
+          <li><a href="https://www.freecodecamp.org" target="_blank" rel="noopener">freeCodeCamp ↗</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools ↗</a></li>
+          <li><a href="https://stackoverflow.com" target="_blank" rel="noopener">Stack Overflow ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CodeSphere. Created for educational purposes.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorials – CodeSphere</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo-img-link">
+        <img src="images/CodeSphere.png" alt="CodeSphere Logo" class="site-logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="languages.html">Languages</a></li>
+        <li><a href="tutorials.html" class="active">Tutorials</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="languages.html">Languages</a>
+      <a href="tutorials.html" class="active">Tutorials</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>Step-by-Step <span style="color:#00e5a0">Tutorials</span></h1>
+    <p>Structured learning paths to take you from complete beginner to confident programmer.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="tutorials-grid" id="tutorialsGrid">
+
+        <div class="tut-card" data-lang="python">
+          <div class="tut-meta"><span class="tut-lang">Python</span><span class="tut-duration">⏱ 30 min</span></div>
+          <h3>Your First Python Program</h3>
+          <p>Install Python, write your first lines of code. Variables, print statements, and basic input/output.</p>
+          <div class="tut-footer"><span class="tut-level">🟢 Beginner</span><a href="tutorials.html" class="tut-link">Start Tutorial →</a></div>
+        </div>
+
+        <div class="tut-card" data-lang="python">
+          <div class="tut-meta"><span class="tut-lang">Python</span><span class="tut-duration">⏱ 45 min</span></div>
+          <h3>Python Lists &amp; Loops</h3>
+          <p>Master lists and learn how to use for/while loops to iterate over data and automate tasks.</p>
+          <div class="tut-footer"><span class="tut-level">🟢 Beginner</span><a href="tutorials.html" class="tut-link">Start Tutorial →</a></div>
+        </div>
+
+        <div class="tut-card" data-lang="python">
+          <div class="tut-meta"><span class="tut-lang">Python</span><span class="tut-duration">⏱ 60 min</span></div>
+          <h3>Functions &amp; Modules</h3>
+          <p>Write reusable functions, understand scope, and import built-in modules to extend your programs.</p>
+          <div class="tut-footer"><span class="tut-level">🟡 Intermediate</span><a href="tutorials.html" class="tut-link">Start Tutorial →</a></div>
+        </div>
+
+        <div class="tut-card" data-lang="html">
+          <div class="tut-meta"><span class="tut-lang" style="color:#ff6b6b">HTML &amp; CSS</span><span class="tut-duration">⏱ 40 min</span></div>
+          <h3>Build Your First Web Page</h3>
+          <p>Learn the anatomy of an HTML doc, common tags, and how to link a CSS stylesheet.</p>
+          <div class="tut-footer"><span class="tut-level">🟢 Beginner</span><a href="tutorials.html" class="tut-link">Start Tutorial →</a></div>
+        </div>
+
+        <div class="tut-card" data-lang="html">
+          <div class="tut-meta"><span class="tut-lang" style="color:#ff6b6b">HTML &amp; CSS</span><span class="tut-duration">⏱ 55 min</span></div>
+          <h3>CSS Flexbox &amp; Grid</h3>
+          <p>Flexbox for one-dimensional layouts, Grid for two-dimensional designs. Both explained clearly.</p>
+          <div class="tut-footer"><span class="tut-level">🟡 Intermediate</span><a href="tutorials.html" class="tut-link">Start Tutorial →</a></div>
+        </div>
+
+        <div class="tut-card" data-lang="html">
+          <div class="tut-meta"><span class="tut-lang" style="color:#ff6b6b">HTML &amp; CSS</span><span class="tut-duration">⏱ 50 min</span></div>
+          <h3>Responsive Design</h3>
+          <p>Make your sites look great on any screen. Media queries, fluid type, mobile-first strategies.</p>
+          <div class="tut-footer"><span class="tut-level">🟡 Intermediate</span><a href="tutorials.html" class="tut-link">Start Tutorial →</a></div>
+        </div>
+
+        <div class="tut-card" data-lang="javascript">
+          <div class="tut-meta"><span class="tut-lang" style="color:#ffce3d">JavaScript</span><span class="tut-duration">⏱ 35 min</span></div>
+          <h3>JavaScript Fundamentals</h3>
+          <p>Variables, data types, conditionals, and functions — the essentials explained for absolute beginners.</p>
+          <div class="tut-footer"><span class="tut-level">🟢 Beginner</span><a href="tutorials.html" class="tut-link">Start Tutorial →</a></div>
+        </div>
+
+        <div class="tut-card" data-lang="javascript">
+          <div class="tut-meta"><span class="tut-lang" style="color:#ffce3d">JavaScript</span><span class="tut-duration">⏱ 60 min</span></div>
+          <h3>DOM Manipulation</h3>
+          <p>How JavaScript interacts with HTML. Events, selectors, and live page updates.</p>
+          <div class="tut-footer"><span class="tut-level">🟡 Intermediate</span><a href="tutorials.html" class="tut-link">Start Tutorial →</a></div>
+        </div>
+
+        <div class="tut-card" data-lang="sql">
+          <div class="tut-meta"><span class="tut-lang" style="color:#7c6fff">SQL</span><span class="tut-duration">⏱ 40 min</span></div>
+          <h3>SQL Basics: SELECT, FROM, WHERE</h3>
+          <p>Write your first database queries. Retrieve and filter data using the fundamental SQL commands.</p>
+          <div class="tut-footer"><span class="tut-level">🟢 Beginner</span><a href="tutorials.html" class="tut-link">Start Tutorial →</a></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section video-section">
+    <div class="container">
+      <h2 class="section-title">Featured Tutorial Video</h2>
+      <p class="section-sub">A full Python beginner course to rapidly build your foundations from scratch.</p>
+      <div class="video-wrapper">
+        <<iframe width="771" height="434" src="https://www.youtube.com/embed/rfscVS0vtbw" title="Learn Python - Full Course for Beginners [Tutorial]" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="video-caption">▲ Learn Python – Full Course for Beginners — freeCodeCamp.org (YouTube, 2019)</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-img-link">
+          <img src="images/CodeSphere.png" alt="CodeSphere Logo" class="site-logo footer-logo" />
+        </a>
+        <p>A free programming education resource for beginners and enthusiasts.</p>
+        <a href="mailto:00022963@wiut.uz" class="mailto-link">📧 00022963@wiut.uz</a>
+      </div>
+      <nav class="sitemap">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="languages.html">Languages</a></li>
+          <li><a href="tutorials.html" class="active">Tutorials</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="footer-ext">
+        <h4>External Links</h4>
+        <ul>
+          <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs ↗</a></li>
+          <li><a href="https://www.freecodecamp.org" target="_blank" rel="noopener">freeCodeCamp ↗</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools ↗</a></li>
+          <li><a href="https://stackoverflow.com" target="_blank" rel="noopener">Stack Overflow ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CodeSphere. Created for educational purposes.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
